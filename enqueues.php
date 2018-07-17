@@ -15,7 +15,8 @@ wp_enqueue_style('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/sli
 wp_enqueue_style('slicktheme', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), CHILD_THEME_VERSION);
 
 /*Easy Autocomplete http://easyautocomplete.com*/
-wp_enqueue_script('easyautocompletejs', '//cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.js', array('jquery'), CHILD_THEME_VERSION);
+wp_add_inline_script( 'jquery-core', '$ = jQuery;' );
+wp_enqueue_script('easyautocompletejs', '//cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.js', array('jquery', 'jquery-core'), CHILD_THEME_VERSION);
 wp_enqueue_style('easyautocompletecss', '//cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css', array(), CHILD_THEME_VERSION);
 wp_enqueue_style('easyautocompletecss-theme', '//cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css', array(), CHILD_THEME_VERSION);
 
