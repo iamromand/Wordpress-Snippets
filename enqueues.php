@@ -23,3 +23,5 @@ wp_enqueue_style('easyautocompletecss-theme', '//cdnjs.cloudflare.com/ajax/libs/
 /*jQuery UI https://jqueryui.com/*/
 wp_enqueue_script( 'jquery-ui-js', '//code.jquery.com/ui/1.12.0/jquery-ui.min.js', array( 'jquery' ), CHILD_THEME_VERSION);
 wp_enqueue_style( 'jquery-ui-css', '//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css', array(), CHILD_THEME_VERSION );
+
+wp_enqueue_script('blockui', '//cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js', array('jquery'), CHILD_THEME_VERSION);
