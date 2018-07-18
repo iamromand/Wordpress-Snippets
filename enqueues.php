@@ -25,3 +25,12 @@ wp_enqueue_script( 'jquery-ui-js', '//code.jquery.com/ui/1.12.0/jquery-ui.min.js
 wp_enqueue_style( 'jquery-ui-css', '//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css', array(), CHILD_THEME_VERSION );
 
 wp_enqueue_script('blockui', '//cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js', array('jquery'), CHILD_THEME_VERSION);
+
+wp_enqueue_script( 'isotope', '//unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js', array('jquery'), THEME_VERSION, false);
+        
+        
+wp_enqueue_script( 'wowjs', '//cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js', array('jquery'), THEME_VERSION, false);
+wp_enqueue_style( 'animatecss', '//fastcdn.org/Animate.css/3.4.0/animate.min.css', array(), THEME_VERSION, false);
+
+wp_enqueue_script( 'jquery-ui', '//code.jquery.com/ui/1.12.1/jquery-ui.min.js', array('jquery'), THEME_VERSION, false);
+wp_enqueue_style( 'jquery-ui-css', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', array(), THEME_VERSION, false);
